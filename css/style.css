@@ -1,0 +1,410 @@
+/* 
+estructura para trabajar
+SELECTOR(elemento de html) {
+PROPIEDAD: valor;
+}
+
+selectores:
+id = uso unico. bloques grandes
+class = se puede reutilizar. 
+
+cascada de info para indicar dentro de que seccion aplico la edicion
+*/
+
+/*font-family, @font-face src url, si tengo una typo descargada en el equipo como archivo*/
+
+/* EB Garamond https://fonts.google.com/selection/embed*/
+
+@import url(https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap);
+
+/* media query mobile*/
+@media only screen and (mas-width: 500px) {
+    body {
+        background-color: white;
+    }
+}
+/* media query tablet*/
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    body {
+        background-color: white;
+    }
+}
+
+/* media query desktop*/
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: white;
+    }
+}
+
+/*reseteo todos los margenes por default*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*menu principal y encabezado*/
+.encabezado-alna {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 20px 0;
+    /* Ajusta el margen superior e inferior según sea necesario */
+    padding: 0;
+    text-align: center;
+    /* Centra el texto dentro del h1 */
+    width: 100%;
+    /* el h1 ocupe el ancho completo del header */
+    color: black;
+    font-family: "EB Garamond", serif;
+    font-variant: small-caps;
+    font-weight: 800;
+}
+
+header {
+    height: auto;
+    /* Ajusta según sea necesario */
+}
+
+header body {
+    overflow: visible;
+}
+
+body html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main {
+    height: 2000px;
+    /* Asegura que haya suficiente contenido para scroll */
+}
+
+nav {
+    position: sticky;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background-color: #c3d1fd;
+    border: 1px solid #c3d1fd;
+    margin: 0;
+    padding: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+    /* Coloca los elementos en línea */
+    margin: 0 30px;
+    /* Añade espacio entre los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: black;
+    /* Establece el color del texto de los enlaces */
+}
+
+nav a:hover {
+    color: blue;
+    /* Cambia el color del enlace al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* imagen y texto inicio*/
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    /* Ajusta el tamaño máximo según tus necesidades */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.presentacion-inicio {
+    position: absolute;
+    color: white;
+    /* Ajusta el color según el contraste con la imagen */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Opcional: añade un fondo semitransparente para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 90%;
+    /* Evita que el texto sea más ancho que el contenedor */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total del elemento */
+    left: 20%;
+    /* Ajusta el espacio desde la izquierda */
+    right: 20%;
+    /* Ajusta el espacio desde la derecha */
+    top: 50%;
+    z-index: +1;
+}
+
+
+
+/* selector id es: "#" */
+#blue {
+    color: midnightblue;
+}
+
+/*selector class es: "." */
+.red {
+    color: darkred;
+}
+
+/*aplico color a todo el main*/
+
+main a .colortitulo {
+    color: darkblue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bloque {
+    width: 30%;
+    /* Define el ancho del bloque, ajustable */
+    margin-left: 0 auto;
+    /* Centra el bloque horizontalmente */
+    padding: 20px;
+    /* Añade un poco de relleno interno */
+    border: 1px solid #ffffff;
+    /* Añade un borde para visualizar el contenedor */
+}
+
+/*titulos y subtitulos*/
+
+h2 {
+    color: black;
+    font-size: xx-large;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+}
+
+h3 {
+    color: midnightblue;
+    font-size: large;
+    font-family: "EB Garamond", serif;
+}
+
+/*distintos parrafos*/
+p {
+    color: black;
+    font-family: "EB Garamond", serif;
+    margin: 40px;
+    /*unidades de medida absoluta, medida fija que no cambia en el dispositivo*/
+}
+
+section p strong {
+    color: rgb(138, 5, 5);
+}
+
+#presentacion-inicio {
+    font-size: x-large;
+}
+
+/* dentro de los p, escribo la class para darle el mismo formato a todos esos parrafos*/
+.parrafo-tipo1 {
+    font-size: x-large;
+    text-align: justify;
+    font-family: "EB Garamond", serif;
+}
+
+.parrafo-servicios {
+    font-size: large;
+    font-family: "EB Garamond", serif;
+}
+
+.parrafo-quienes-somos {
+    font-size: x-large;
+    text-align: left;
+    text-align: justify;
+    font-weight: normal;
+    font-family: "EB Garamond", serif;
+}
+
+/*escrito en cascada donde quier que se aplique segun lo escrito en el html*/
+main section h2 p {
+    color: black;
+    font-size: x-large;
+}
+
+footer {
+    text-align: center;
+    color: rgb(61, 62, 62);
+}
+
+
+
+/*medidas de imagenes*/
+.img-inicio {
+    width: 100%;
+    /*se adapta al 100% de cualquier dispositivo*/
+}
+
+.img-servicios {
+    width: 50%;
+}
+
+/*imagenes menu edificios*/
+.img-edificios {
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+    width: 100%;
+    height: 100%;
+
+    margin-right: 5%;
+    margin-left: 5%;
+    
+}
+
+/*cada una en grid
+row: vertical X
+column: horizontal Y
+*/
+
+.img-edificio70 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio76 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio18 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio43 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio73 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio89 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio92 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.img-edificio94 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* imagenes menu servicios*/
+.servicios-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+/*REM es relativo al tama;o del elemento ROOT
+ex. 
+a } font-side> 2rem; cada rem son 16px que vienen por default, asi generalizo la typo. 
+p } font-side: 4em lo mismo para texto
+html } font-side: 20px*/
+
+/*CAJAS se componen de afuera hacia adentro por MARGIN, BORDER, PADDING Y CONTENT
+CONTENT: el texto html que incrusate
+PADDING: (que crezca el interior) los 4 margenes de la caja, ex. pad 20px 40px 60px 100px le da el mismo relleno a cada lado 
+o sino trabajo de manera individual pa...-top/right/left/bottom
+BORDER: siempre aplicar tama;o, estilo y color
+ex. border: 1px solid (tipo de borde, lineal, puinteado, etc) color 
+o individual top/right/left/bottom
+MARGIN: (que crezca los espacios entre contenidos) (parecido al padding valores predeterminados a cada lado o individual)
+*/
+
+/*DISPLAY me permite cambiar de LINEA a BLOQUE
+tambien DISPLAY: inline-block; pone en linea, se coloca al lado de la ultima caja respetando los elementos internos
+DISPLAY;NONE oculta la caja visiblemente para trabajar en otra en html, 
+ex cuando es distinto lo que se visualiza entre web y mobile
+visibility hiden, ocupa el espacio pero no se ve
+block --> elementos que van a ocupar el 100% de ancho de la pantalla 
+inline--> elementos que ocupan solo el ancho de su contenido.
+inline-block --> se comporta como un elemento en línea, pero a diferencia Permite definir ancho (width) y alto (height)*/
+
+/*POSITION, cuando el menu superior te sigue, o el icono de whatsapp o el chatbot, etc
+POSITION: 
+relative; (la caja se va a mover segun su posicion natural)
+se usa tmb top/right/left/bottom 
+absolut; sew mueve por toda la pantala y superpone
+fixed; la caja queda pegada por mas que navegue se mueve con uno, ex. top 0px (manu superior)
+sticky; similar al fixed pero en la primer pantalla queda en su posicion natural y cuando navego recien ahi se mueve
+z-index; me aseguro que siempre estara en la capa superior*/
+
+/*FLEX BOX (adaptacion a cualquier pantalla)
+FLEX CONTEINER (padre)
+FLEX ITEMS (van dentro del conteiner)
+FLEX WRAP (si se achica la pantalla los acomodan automatico para que no se rompan ex. hacia abajo)
+DISPLAY FLEX
+FLEX FLOW (uno valores) ex RAW y WRAP*/
+
+/*primero declaro: ... { display; flex
+.img-xxx { flex direction: column (ejemplo todas las imagenes en columna)
+BACKGROUND-IMAGE, Imagen de fondo*/
