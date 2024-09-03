@@ -14,6 +14,11 @@
         rel="stylesheet">
 
     <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -36,54 +41,65 @@
     </header>
 
     <main>
-        <section class="servicios-texto-principal">
+        <section>
+
             <div>
-                <h2>SERVICIOS</h2>
-                <p class="parrafo-tipo1">Nuestros servicios aseguran la precisión contable, asesoramiento legal,
-                    mantenimiento óptimo y respuesta inmediata a emergencias, cubriendo todas las necesidades y
-                    resoluciones para los consorcistas.</p>
+                <h2 class="subtitulos-h2">SERVICIOS</h2>
             </div>
+
+            <p class="parrafo-tipo1">Nuestros servicios aseguran la precisión contable, asesoramiento legal,
+                mantenimiento óptimo y respuesta inmediata a emergencias, cubriendo todas las necesidades y
+                resoluciones para los consorcistas.</p>
+
         </section>
 
         <section class="servicios-container">
-            <div class="servicios-1">
-                <h3>ADMINISTRACION CONTABLE</h3>
-                <img src="../img/contable.jpg" alt="administracion contable" class="img-servicios">
 
-                <p class="parrafo-servicios">Gestionamos la liquidación de expensas, sueldos y cargas sociales con
-                    precisión y puntualidad. Nuestro sistema contable garantiza la claridad y transparencia en todas las
-                    operaciones financieras del consorcio.</p>
+
+            <div class="container text-center">
+                <div class="row row-cols-2" style="row-gap: 20px">
+                    <div class="col">
+                        <h3 class="subtitulo-servicios estilo-subtitulo">ADMINISTRACION CONTABLE</h3>
+                        <img src="../img/contable.jpg" alt="administracion contable" class="img-fluid">
+                        <p class="parrafo-servicios">Gestionamos la liquidación de expensas, sueldos y cargas sociales
+                            con
+                            precisión y puntualidad. Nuestro sistema contable garantiza la <strong
+                                class="strong-black">claridad y transparencia en todas las
+                                operaciones financieras del consorcio.</strong></p>
+                    </div>
+                    <div class="col">
+                        <h3 class="subtitulo-servicios estilo-subtitulo">ASESORIA LEGAL</h3>
+                        <img src="../img/legal.jpg" alt="asesoria legal" class="img-fluid">
+                        <p class="parrafo-servicios">Ofrecemos asesoramiento continuo en cuestiones legales y
+                            reglamentarias,
+                            asegurando el <strong class="strong-black">cumplimiento de todas las normativas
+                                vigentes</strong>. Contamos con experiencia en trabajo con
+                            múltiples bancos y gestionamos la intimación a unidades con mora de manera efectiva. Nuestro
+                            equipo
+                            de profesionales especialistas en Propiedad Horizontal está siempre disponible para resolver
+                            cualquier consulta o problema.</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="subtitulo-servicios estilo-subtitulo">MANTENIMIENTO INTEGRAL</h3>
+                        <img src="../img/plomeria.jpg" alt="mantenimiento integral" class="img-fluid">
+                        <p class="parrafo-servicios">Coordinamos y <strong class="strong-black">supervisamos todas las
+                                tareas de mantenimiento, reparaciones
+                                y mejoras edilicias.</strong> Nos aseguramos de que su propiedad se mantenga en óptimas
+                            condiciones,
+                            valorando su inversión y garantizando la seguridad de los residentes.</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="subtitulo-servicios estilo-subtitulo">GESTION DE EMERGENCIAS</h3>
+                        <img src="../img/emergencias.jpg" alt="gestion de emergencias" class="img-fluid">
+                        <p class="parrafo-servicios">Estamos preparados para <strong class="strong-black">responder
+                                rápidamente ante cualquier situación de
+                                emergencia</strong>, asegurando la seguridad y el bienestar de todos los residentes del
+                            consorcio.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="servicios-2">
-                <h3>ASESORIA LEGAL</h3>
-                <img src="../img/legal.jpg" alt="asesoria legal" class="img-servicios">
 
-                <p class="parrafo-servicios">Ofrecemos asesoramiento continuo en cuestiones legales y reglamentarias,
-                    asegurando el cumplimiento de todas las normativas vigentes. Contamos con experiencia en trabajo con
-                    múltiples bancos y gestionamos la intimación a unidades con mora de manera efectiva. Nuestro equipo
-                    de profesionales especialistas en Propiedad Horizontal está siempre disponible para resolver
-                    cualquier consulta o problema.</p>
-            </div>
-
-            <div class="servicios-3">
-                <h3>MANTENIMIENTO INTEGRAL</h3>
-                <img src="../img/plomeria.jpg" alt="mantenimiento integral" class="img-servicios">
-
-                <p class="parrafo-servicios">Coordinamos y supervisamos todas las tareas de mantenimiento, reparaciones
-                    y mejoras edilicias. Nos aseguramos de que su propiedad se mantenga en óptimas condiciones,
-                    valorando su inversión y garantizando la seguridad de los residentes.</p>
-            </div>
-
-            <div class="servicios-4">
-                <h3>GESTION DE EMERGENCIAS</h3>
-                <img src="../img/emergencias.jpg" alt="gestion de emergencias" class="img-servicios">
-
-                <p class="parrafo-servicios">Estamos preparados para responder rápidamente ante cualquier situación de
-                    emergencia, asegurando la seguridad y el bienestar de todos los residentes del consorcio.</p>
-            </div>
-
-        </section>
 
     </main>
 
@@ -91,6 +107,9 @@
         <h6>Copyright - Designed by Alvarez Tamara</h6>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 

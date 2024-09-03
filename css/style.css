@@ -23,6 +23,7 @@ cascada de info para indicar dentro de que seccion aplico la edicion
         background-color: white;
     }
 }
+
 /* media query tablet*/
 @media only screen and (min-width: 501px) and (max-width: 960px) {
     body {
@@ -43,7 +44,19 @@ cascada de info para indicar dentro de que seccion aplico la edicion
     padding: 0;
 }
 
-/*encabezado ALNA ADMINISTRACION*/
+
+html,
+body {
+    height: 100%;
+    /* Hace que el body ocupe toda la altura de la página */
+}
+
+main {
+    flex: 1;
+    /* Ocupa el espacio restante entre el header y el footer */
+}
+
+/*encabezado ALNA ADMINISTRACION en todas las pags*/
 .encabezado-alna {
     display: flex;
     flex-direction: column;
@@ -57,7 +70,7 @@ cascada de info para indicar dentro de que seccion aplico la edicion
     color: black;
     font-family: "EB Garamond", serif;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 400%;
 
 }
 
@@ -68,7 +81,7 @@ header {
 
 
 main {
-    height: 2000px;
+    height: 1200px;
     /* suficiente contenido para scroll */
 }
 
@@ -83,6 +96,8 @@ main {
     margin: 0;
     padding: 20px;
     z-index: 1;
+    font-weight: bold;
+    font-size: 150%;
 }
 
 nav ul {
@@ -185,23 +200,30 @@ main a .colortitulo {
     /* Añade un borde para visualizar el contenedor */
 }
 
+/*ALNA ENCABEZADO*/
+
+
 /*TITULOS SERVICIOS QUIENES EDIFICIOS CONTACTO*/
 
-h2 {
+.subtitulos-h2 {
     color: black;
-    font-size: xx-large;
+    font-size: 250%;
     font-family: "EB Garamond", serif;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 3%;
+    padding-bottom: 1%;
 }
-/*SUBTITULOS*/
-h3 {
-    color: midnightblue;
-    font-size: x-large;
-    font-family: "EB Garamond", serif;
+
+/*typo bold*/
+.strong-black {
+    color: black
+}
+
+.strong-white {
+    color: white;
 }
 
 /*distintos parrafos*/
@@ -212,44 +234,46 @@ p {
     /*unidades de medida absoluta, medida fija que no cambia en el dispositivo*/
 }
 
-section p strong {
-    color: black
+/*SUBTITULOS Estilo tipografico igual para todos*/
+
+.estilo-subtitulo {
+    color: midnightblue;
+    font-size: 200%;
+    font-family: "EB Garamond", serif;
 }
 
-#presentacion-inicio {
-    font-size: x-large;
+/*SUBTITULOS especificando margen o direccion*/
+.subtitulo-quienes-somos {
+    margin: 40px;
+}
+
+.subtitulo-contacto {
+    text-align: center;
+}
+
+.presentacion-inicio {
+    /*Administración y Soluciones integrales para su consorcio.*/
+    font-size: 2rem;
 }
 
 /* dentro de los p, escribo la class para darle el mismo formato a todos esos parrafos*/
 .parrafo-tipo1 {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: justify;
     font-family: "EB Garamond", serif;
+    padding-bottom: 1%;
 }
 
 .parrafo-servicios {
-    font-size: large;
+    font-size: x-large;
     font-family: "EB Garamond", serif;
 }
 
-.parrafo-quienes-somos {
-    font-size: x-large;
-    text-align: left;
-    text-align: justify;
-    font-weight: normal;
-    font-family: "EB Garamond", serif;
+.texto-contacto {
+    font-size: xx-large;
 }
 
-/*escrito en cascada donde quier que se aplique segun lo escrito en el html*/
-main section h2 p {
-    color: black;
-    font-size: x-large;
-}
-
-footer {
-    text-align: center;
-    color: rgb(61, 62, 62);
-}
+/*escrito en cascada donde quiero que se aplique segun lo escrito en el html: main section h2 p {*/
 
 
 /*medidas de imagenes*/
@@ -265,21 +289,16 @@ footer {
 /*imagenes menu edificios*/
 .img-edificios {
     display: grid;
-    grid-template-rows: repeat(2, 300px);
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
+    grid-auto-rows: 500px;
+    grid-template-columns: repeat(auto-fill, minmax (25rem, 1fr));
+    
+    margin: 20px;
+    padding: 20px;
 
     row-gap: 10px;
     column-gap: 10px;
-
-    width: 100%;
-    height: 100%;
-
-    margin-right: 5%;
-    margin-left: 5%;
-    
 }
+
 
 /*cada una en grid
 row: vertical X
@@ -344,6 +363,7 @@ column: horizontal Y
 
 
 /* imagenes menu servicios*/
+
 .servicios-container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -358,6 +378,11 @@ column: horizontal Y
     margin-left: 20px;
 }
 
+footer {
+    text-align: center;
+    color: rgb(61, 62, 62);
+    padding: 10px;
+}
 
 /*REM es relativo al tama;o del elemento ROOT
 ex. 
