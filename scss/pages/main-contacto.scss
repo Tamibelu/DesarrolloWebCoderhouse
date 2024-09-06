@@ -1,0 +1,52 @@
+main {
+    section {
+
+        &.nuestros-contactos {
+            div {
+                &.sub-contact {
+                    h2 {
+                        &.subtitulos-h2 {
+                            @include subtitulo-h2;
+                            color: $color-h2;
+                            //mixin
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            &.parrafo-tipo1 {
+                @include parrafo-tipo1;
+            }
+        }
+
+        div {
+            &.container {
+                div {
+                    &.row {
+                        div {
+                            h3 {
+                                &.subtitulo-contacto {
+                                    @include subtitulo-contacto;
+                                }
+                            }
+
+                            p {
+                                &.texto-contacto {
+
+                                    @include parrafo-tipo2;
+                                    font-weight: 500;
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+}

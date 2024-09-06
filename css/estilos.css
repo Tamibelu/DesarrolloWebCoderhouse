@@ -161,7 +161,7 @@ main section.edificio div h2.subtitulos-h2 {
 }
 main section.img-edificios {
   display: grid;
-  grid-auto-rows: 500px;
+  grid-auto-rows: 400px;
   grid-template-columns: repeat(auto-fill, minmax 25rem, 1fr);
   margin: 20px;
   padding: 20px;
@@ -221,6 +221,35 @@ main p.parrafo-tipo1 {
   text-align: justify;
   font-family: "EB Garamond", serif;
   padding: 0 1cm 1% 1cm;
+}
+
+main section.nuestros-contactos div.sub-contact h2.subtitulos-h2 {
+  font-size: 250%;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  color: #9f1414;
+}
+main section p.parrafo-tipo1 {
+  font-size: xx-large;
+  text-align: justify;
+  font-family: "EB Garamond", serif;
+  padding: 0 1cm 1% 1cm;
+}
+main section div.container div.row div h3.subtitulo-contacto {
+  font-size: 120%;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0.5cm;
+  font-weight: 700;
+}
+main section div.container div.row div p.texto-contacto {
+  font-family: "EB Garamond", serif;
+  font-size: 150%;
+  font-weight: 500;
 }
 
 footer {
