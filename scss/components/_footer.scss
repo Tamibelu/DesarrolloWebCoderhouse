@@ -1,0 +1,10 @@
+footer {
+    @include flexbox (row, center, inherit, inherit);
+    h6 {
+        color: rgb(61, 62, 62);
+        padding: 10px;
+        font-size: small;
+        font-family: "EB Garamond", serif;
+        font-style: italic;
+    }
+}

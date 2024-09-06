@@ -1,0 +1,41 @@
+main {
+    section {
+        &.parrafo-copete {
+            div {
+                h2 {
+                    &.subtitulos-h2 {
+                        @include subtitulo-h2;
+                        color: $color-h2;
+                        //mixin
+                    }
+                }
+            }
+
+            p {
+                &.parrafo-tipo1 {
+                    @include parrafo-tipo1;
+                }
+            }
+        }
+
+        &.servicios-container {
+            div {
+                h3 {
+                    &.estilo-subtitulo {
+                        @include estilo-subtitulo;
+                        color: $color-h3;
+                    }
+                }
+
+                p {
+                    &.parrafo-tipo2 {
+                        @include parrafo-tipo2;
+                        margin-top: 0.5cm
+                        
+                    }
+                }
+                
+        }
+    }
+}
+}

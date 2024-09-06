@@ -1,0 +1,41 @@
+@mixin flexbox ($flex-d, $justify-c, $align-item, $wrap) {
+    display: flex;
+    flex-direction: $flex-d;
+    justify-content: $justify-c;
+    align-items: $align-item;
+    flex-wrap: $wrap;
+}
+
+@mixin subtitulo-h2 {
+    font-size: 250%;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+    padding-bottom: 1%;
+}
+
+@mixin parrafo-tipo1 {
+    font-size: xx-large;
+    text-align: justify;
+    font-family: "EB Garamond", serif;
+    padding: 0 1cm 1% 1cm;
+}
+
+@mixin estilo-subtitulo {
+    font-size: 200%;
+    font-family: "EB Garamond", serif;
+    margin-bottom: 0.5cm;
+    font-weight: 100;
+}
+
+@mixin parrafo-tipo2 {
+    font-family: "EB Garamond", serif;
+    font-size: 150%;
+     
+    }
+
+
+// mixin es un bloque de propiedades que trabajan en conjunto y se reutilizan

@@ -1,3 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+header div.navegador, header div h1.encabezado-alna {
+  width: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+header div h1.encabezado-alna {
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+  margin: 30px 0 20px 0;
+  padding: 0;
+  text-align: center;
+  color: black;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-size: 400%;
+}
+header div.navegador {
+  position: sticky;
+  top: 20px;
+  left: 0;
+  background-color: #a14e4e;
+  border: 1px solid #a14e4e;
+  margin: 0;
+  padding: 20px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: "EB Garamond", serif;
+}
+header div nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+header div nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+header div nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header div nav ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main section.texto-presentacion p.presentacion-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 90%;
+  box-sizing: border-box;
+  left: 20%;
+  right: 20%;
+  top: 60%;
+  z-index: 1;
+}
+main section.texto-presentacion p.strong-white {
+  color: white;
+}
+main section img.img-inicio {
+  width: 100%;
+}
+
+main section.parrafo-copete div h2.subtitulos-h2 {
+  font-size: 250%;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  color: #9f1414;
+}
+main section.parrafo-copete p.parrafo-tipo1 {
+  font-size: xx-large;
+  text-align: justify;
+  font-family: "EB Garamond", serif;
+  padding: 0 1cm 1% 1cm;
+}
+main section.servicios-container div h3.estilo-subtitulo {
+  font-size: 200%;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0.5cm;
+  font-weight: 100;
+  color: #9f1414;
+}
+main section.servicios-container div p.parrafo-tipo2 {
+  font-family: "EB Garamond", serif;
+  font-size: 150%;
+  margin-top: 0.5cm;
+}
+
+main section div h2.subtitulos-h2 {
+  font-size: 250%;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  color: #9f1414;
+}
+main section p.parrafo-tipo1 {
+  font-size: xx-large;
+  text-align: justify;
+  font-family: "EB Garamond", serif;
+  padding: 0 1cm 1% 1cm;
+}
+main section p.parrafo-tipo2 {
+  font-family: "EB Garamond", serif;
+  font-size: 150%;
+  padding: 0 1cm 1% 1cm;
+  text-align: justify;
+}
+main section h3.estilo-subtitulo {
+  font-size: 200%;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0.5cm;
+  font-weight: 100;
+  color: #9f1414;
+}
+main section h3.estilo-subtitulo.subtitulo-quienes-somos {
+  padding: 1cm 1cm 1% 1cm;
+}
+
+main section.edificio div h2.subtitulos-h2 {
+  font-size: 250%;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  color: #9f1414;
+}
+main section.img-edificios {
+  display: grid;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(auto-fill, minmax 25rem, 1fr);
+  margin: 20px;
+  padding: 20px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+main section.img-edificios .img-edificio70 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio76 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio18 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio43 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio73 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio89 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio92 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+main section.img-edificios .img-edificio94 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+main p.parrafo-tipo1 {
+  font-size: xx-large;
+  text-align: justify;
+  font-family: "EB Garamond", serif;
+  padding: 0 1cm 1% 1cm;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
+footer h6 {
+  color: rgb(61, 62, 62);
+  padding: 10px;
+  font-size: small;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
 
 /*# sourceMappingURL=estilos.css.map */

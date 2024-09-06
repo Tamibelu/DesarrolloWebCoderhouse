@@ -39,7 +39,7 @@ cascada de info para indicar dentro de que seccion aplico la edicion
 }
 
 /*reseteo todos los margenes por default*/
-* {
+* { /*YA PASADO SCSS*/
     margin: 0;
     padding: 0;
 }
@@ -49,6 +49,7 @@ html,
 body {
     height: 100%;
     /* Hace que el body ocupe toda la altura de la página */
+
 }
 
 main {
@@ -57,7 +58,7 @@ main {
 }
 
 /*encabezado ALNA ADMINISTRACION en todas las pags*/
-.encabezado-alna {
+.encabezado-alna { /*YA PASADO SCSS HEADER*/
     display: flex;
     flex-direction: column;
     margin: 30px 0 20px 0;
@@ -74,19 +75,19 @@ main {
 
 }
 
-header {
+header { /*YA PASADO SCSS HEADER*/
     height: auto;
     /* Ajusta según sea necesario */
 }
 
 
-main {
+main { /*YA PASADO SCSS HEADER*/
     height: 1200px;
     /* suficiente contenido para scroll */
 }
 
 /*menu navegacion INICIO SERVICIOS QUIENES EDIFICIOS CONTACTO*/
-.navegador {
+.navegador { /*YA PASADO SCSS HEADER*/
     position: sticky;
     top: 20px;
     left: 0;
@@ -100,7 +101,7 @@ main {
     font-size: 150%;
 }
 
-nav ul {
+nav ul {/*YA PASADO SCSS HEADER*/
     list-style: none;
     padding: 0;
     margin: 0;
@@ -108,20 +109,20 @@ nav ul {
     justify-content: center;
 }
 
-nav li {
+nav li {/*YA PASADO SCSS HEADER*/
     display: inline;
     /* Coloca los elementos en línea */
     margin: 0 30px;
     /* Añade espacio entre los elementos */
 }
 
-nav a {
+nav a { /*YA PASADO SCSS HEADER*/
     text-decoration: none;
     /* Elimina el subrayado de los enlaces */
     color: black;
     /* Establece el color del texto de los enlaces */
 }
-
+/* va con " & ": YA PASADO SCSS HEADER*/
 nav a:hover {
     color: blue;
     /* Cambia el color del enlace al pasar el cursor */
@@ -147,7 +148,7 @@ nav a:hover {
     display: block;
 }
 
-.presentacion-inicio {
+.presentacion-inicio { /*YA PASADO SCSS MAIN INDEX*/
     position: absolute;
     color: white;
     /* Ajusta el color según el contraste con la imagen */
@@ -205,7 +206,7 @@ main a .colortitulo {
 
 /*TITULOS SERVICIOS QUIENES EDIFICIOS CONTACTO*/
 
-.subtitulos-h2 {
+.subtitulos-h2 { /*SCSS SERVICIOS, ....*/
     color: black;
     font-size: 250%;
     font-family: "EB Garamond", serif;
@@ -222,7 +223,7 @@ main a .colortitulo {
     color: black
 }
 
-.strong-white {
+.strong-white { /*YA PASADO SCSS MAIN INDEX*/
     color: white;
 }
 
@@ -257,7 +258,7 @@ p {
 }
 
 /* dentro de los p, escribo la class para darle el mismo formato a todos esos parrafos*/
-.parrafo-tipo1 {
+.parrafo-tipo1 { /*SCSS SERV ...*/
     font-size: xx-large;
     text-align: justify;
     font-family: "EB Garamond", serif;
@@ -267,6 +268,7 @@ p {
 .parrafo-servicios {
     font-size: x-large;
     font-family: "EB Garamond", serif;
+    margin-top: 0.5cm;
 }
 
 .texto-contacto {
@@ -277,7 +279,7 @@ p {
 
 
 /*medidas de imagenes*/
-.img-inicio {
+.img-inicio { /*SCSS*/
     width: 100%;
     /*se adapta al 100% de cualquier dispositivo*/
 }
@@ -287,7 +289,7 @@ p {
 }
 
 /*imagenes menu edificios*/
-.img-edificios {
+.img-edificios { /*SCSS R E V I S A R*/
     display: grid;
     grid-auto-rows: 500px;
     grid-template-columns: repeat(auto-fill, minmax (25rem, 1fr));
@@ -378,7 +380,7 @@ column: horizontal Y
     margin-left: 20px;
 }
 
-footer {
+footer { /*SCSS*/
     text-align: center;
     color: rgb(61, 62, 62);
     padding: 10px;

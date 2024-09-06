@@ -1,11 +1,28 @@
-@import "./components/header";
-@import "./components/footer";
-@import "./components/media-queries";
+@import "./utilities/reset";
+// reseteo universal //
 
+@import "./utilities/variables";
+// Variables globales
+
+@import "./utilities/mixin";
+@import "./utilities/extend";
+// Extensiones, Sass @extend
+
+@import "./utilities/global";
+// Estilos globales adicionales
+
+@import "./components/header";
+// Estilos del encabezado
+
+// aca iria un main por cada pag creada
 @import "./pages/main-index";
 
-@import "./utilities/extend";
-@import "./utilities/global";
-@import "./utilities/mixin";
-@import "./utilities/reset";
-@import "./utilities/variables";
+@import "./pages/main-servicios";
+@import "./pages/main-quienes-somos";
+@import "./pages/main-edificios";
+@import "./pages/main-contacto.scss";
+
+
+@import "./components/footer";
+
+@import "./components/media-queries";
