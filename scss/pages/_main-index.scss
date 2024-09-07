@@ -1,10 +1,7 @@
-
-
 main {
     section {
-
         &.texto-presentacion {
-            position: center; 
+            position: relative; 
             
 
             p {
@@ -41,7 +38,6 @@ main {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                // prueba gradient
                 background: radial-gradient(at right, rgba(255, 255, 255, 0) 0%, #4061f566 100%);
                 z-index: 0; 
             }
@@ -53,6 +49,88 @@ main {
                     display: block;
                     position: relative; 
                     z-index: -1; 
+                }
+            }
+        }
+    }
+}
+//MQ MOB
+@media (max-width: 576px) {
+    main {
+        section {
+            &.texto-presentacion {
+                p {
+                    &.presentacion-inicio {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                        left: 5%; 
+                        right: 5%;
+                        top: 5%;
+                        
+                    }
+                }
+            }
+
+            &.bg-gradient {
+                img {
+                    &.img-inicio {
+                        width: 100%;
+                        height: 40vh;
+                    }
+                }
+            }
+        }
+    }
+}
+//MQ TAB
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        section {
+            &.texto-presentacion {
+                p {
+                    &.presentacion-inicio {
+                        font-size: 1.4rem; 
+                        padding: 18px;
+                        left: 10%;
+                        right: 10%;
+                        top: 20%;
+                    }
+                }
+            }
+
+            &.bg-gradient {
+                img {
+                    &.img-inicio {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+//MQ DES
+@media (min-width: 769px) {
+    main {
+        section {
+            &.texto-presentacion {
+                p {
+                    &.presentacion-inicio {
+                        font-size: 1.5rem;
+                        padding: 20px;
+                        left: 20%; 
+                        right: 20%;
+                        top: 40%;
+                        transform: translateY(40%);
+                    }
+                }
+            }
+
+            &.bg-gradient {
+                img {
+                    &.img-inicio {
+                        width: 100%;
+                        
+                    }
                 }
             }
         }

@@ -2,26 +2,23 @@ header {
     div {
         h1 {
             &.encabezado-alna {
-                //display: flex;
-                //flex-direction: column;
-                @include flexbox (column, inherit, inherit, inherit);
-                margin: 30px 0 20px 0;
+                @include flexbox(column, inherit, inherit, inherit);
+                margin: 30px auto; 
                 padding: 0;
                 text-align: center;
-                //width: 100%;
                 @extend %header-width;
                 color: $color-black;
                 font-family: "EB Garamond", serif;
                 font-weight: bold;
                 font-size: 400%;
+                max-width: 90%; 
             }
         }
 
         &.navegador {
             position: sticky;
-            top: 20px;
+            top: 0;
             left: 0;
-            //width: 100%;
             @extend %header-width;
             background-color: $color-nav;
             border: 1px solid $color-nav;
@@ -31,28 +28,105 @@ header {
             font-weight: bold;
             font-size: 150%;
             font-family: "EB Garamond", serif;
-        }
+            width: 100%;
+            box-sizing: border-box;
 
-        nav {
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                justify-content: center;
+            nav {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
 
-                li {
-                    display: inline;
-                    margin: 0 30px;
+                    li {
+                        display: inline;
+                        margin: 0 15px;
 
-                    a {
-                        text-decoration: none;
-                        color: $color-black;
+                        a {
+                            text-decoration: none;
+                            color: $color-black;
 
-                        &:hover {
-                            color: $color-blue;
-                            text-decoration: underline;
+                            &:hover {
+                                color: $color-blue;
+                                text-decoration: underline;
+                            }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    // Media Queries para diferentes tamaños de pantalla
+
+    // MQ móviles
+    @media (max-width: 576px) {
+        div {
+            h1 {
+                &.encabezado-alna {
+                    font-size: 200%;
+                    margin: 20px auto; 
+                    max-width: 90%;  
+                }
+            }
+
+            &.navegador {
+                padding: 10px;
+                nav {
+                    ul {
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // MQ  tablets
+    @media (min-width: 577px) and (max-width: 768px) {
+        div {
+            h1 {
+                &.encabezado-alna {
+                    font-size: 300%;
+                    margin: 25px auto; 
+                    max-width: 90%; 
+                }
+            }
+
+            &.navegador {
+                padding: 15px;
+                nav {
+                    ul {
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    // MQ  escritorio
+    @media (min-width: 769px) {
+        div {
+            h1 {
+                &.encabezado-alna {
+                    font-size: 400%;
+                    margin: 30px auto; 
+                    max-width: 90%; 
+                }
+            }
+
+            &.navegador {
+                padding: 20px;
+                nav {
+                    ul {
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0 20px;
                     }
                 }
             }
