@@ -9,6 +9,8 @@ header div.navegador, header div h1.encabezado-alna {
 
 body {
   height: 100%;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background-attachment: fixed;
 }
 
 header div h1.encabezado-alna {
@@ -58,6 +60,9 @@ header div nav ul li a:hover {
   text-decoration: underline;
 }
 
+main section.texto-presentacion {
+  position: center;
+}
 main section.texto-presentacion p.presentacion-inicio {
   display: flex;
   flex-direction: column;
@@ -68,20 +73,38 @@ main section.texto-presentacion p.presentacion-inicio {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   max-width: 90%;
   box-sizing: border-box;
   left: 20%;
   right: 20%;
-  top: 60%;
+  top: 55%;
   z-index: 1;
+  font-size: 150%;
 }
 main section.texto-presentacion p.strong-white {
   color: white;
 }
-main section img.img-inicio {
+main section.bg-gradient {
+  position: relative;
+}
+main section.bg-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: radial-gradient(at right, rgba(255, 255, 255, 0) 0%, rgba(64, 97, 245, 0.4) 100%);
+  z-index: 0;
+}
+main section.bg-gradient img.img-inicio {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: -1;
 }
 
 main section.parrafo-copete div h2.subtitulos-h2 {
@@ -93,6 +116,7 @@ main section.parrafo-copete div h2.subtitulos-h2 {
   text-align: center;
   margin-top: 3%;
   padding-bottom: 1%;
+  font-weight: 700;
   color: #9f1414;
 }
 main section.parrafo-copete p.parrafo-tipo1 {
@@ -105,8 +129,11 @@ main section.servicios-container div h3.estilo-subtitulo {
   font-size: 200%;
   font-family: "EB Garamond", serif;
   margin-bottom: 0.5cm;
-  font-weight: 100;
-  color: #9f1414;
+  font-weight: 500;
+  color: #00039b;
+}
+main section.servicios-container div img {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 50% 100%, 0 89%);
 }
 main section.servicios-container div p.parrafo-tipo2 {
   font-family: "EB Garamond", serif;
@@ -123,6 +150,7 @@ main section div h2.subtitulos-h2 {
   text-align: center;
   margin-top: 3%;
   padding-bottom: 1%;
+  font-weight: 700;
   color: #9f1414;
 }
 main section p.parrafo-tipo1 {
@@ -141,13 +169,16 @@ main section h3.estilo-subtitulo {
   font-size: 200%;
   font-family: "EB Garamond", serif;
   margin-bottom: 0.5cm;
-  font-weight: 100;
-  color: #9f1414;
+  font-weight: 500;
+  color: #00039b;
 }
 main section h3.estilo-subtitulo.subtitulo-quienes-somos {
   padding: 1cm 1cm 1% 1cm;
 }
 
+main {
+  position: relative;
+}
 main section.edificio div h2.subtitulos-h2 {
   font-size: 250%;
   font-family: "EB Garamond", serif;
@@ -157,6 +188,7 @@ main section.edificio div h2.subtitulos-h2 {
   text-align: center;
   margin-top: 3%;
   padding-bottom: 1%;
+  font-weight: 700;
   color: #9f1414;
 }
 main section.img-edificios {
@@ -168,53 +200,64 @@ main section.img-edificios {
   row-gap: 10px;
   column-gap: 10px;
 }
+main section.img-edificios .img-edificio70,
+main section.img-edificios .img-edificio76,
+main section.img-edificios .img-edificio18,
+main section.img-edificios .img-edificio43,
+main section.img-edificios .img-edificio73,
+main section.img-edificios .img-edificio89,
+main section.img-edificios .img-edificio92,
+main section.img-edificios .img-edificio94 {
+  width: 80%;
+  height: 80%;
+  clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
+  position: relative;
+  z-index: 1;
+  transition: transform 2s ease;
+}
+main section.img-edificios .img-edificio70:hover,
+main section.img-edificios .img-edificio76:hover,
+main section.img-edificios .img-edificio18:hover,
+main section.img-edificios .img-edificio43:hover,
+main section.img-edificios .img-edificio73:hover,
+main section.img-edificios .img-edificio89:hover,
+main section.img-edificios .img-edificio92:hover,
+main section.img-edificios .img-edificio94:hover {
+  transform: scale(1.5, 1.5);
+  transition: transform 1s ease;
+  z-index: 10;
+}
 main section.img-edificios .img-edificio70 {
   grid-column: 1/2;
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio76 {
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio18 {
   grid-column: 3/4;
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio43 {
   grid-column: 4/5;
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio73 {
   grid-column: 1/2;
   grid-row: 2/3;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio89 {
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio92 {
   grid-column: 3/4;
   grid-row: 2/3;
-  width: 100%;
-  height: 100%;
 }
 main section.img-edificios .img-edificio94 {
   grid-column: 4/5;
   grid-row: 2/3;
-  width: 100%;
-  height: 100%;
 }
 main p.parrafo-tipo1 {
   font-size: xx-large;
@@ -232,6 +275,7 @@ main section.nuestros-contactos div.sub-contact h2.subtitulos-h2 {
   text-align: center;
   margin-top: 3%;
   padding-bottom: 1%;
+  font-weight: 700;
   color: #9f1414;
 }
 main section p.parrafo-tipo1 {

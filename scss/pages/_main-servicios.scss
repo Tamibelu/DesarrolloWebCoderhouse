@@ -27,15 +27,18 @@ main {
                     }
                 }
 
+                img {
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+                }
+
                 p {
                     &.parrafo-tipo2 {
                         @include parrafo-tipo2;
                         margin-top: 0.5cm
-                        
                     }
                 }
-                
+
+            }
         }
     }
-}
 }

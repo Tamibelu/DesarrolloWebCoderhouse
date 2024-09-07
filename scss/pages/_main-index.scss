@@ -1,21 +1,26 @@
 main {
     section {
+
         &.texto-presentacion {
+            position: center; 
+            
+
             p {
                 &.presentacion-inicio {
-                    @include flexbox (column, center, inherit, inherit);
-                    position: absolute;
+                    @include flexbox(column, center, inherit, inherit);
+                    position: absolute; 
                     color: $color-white;
-                    background-color: rgba(0, 0, 0, 0.5);
+                    background-color: rgba(0, 0, 0, 0.5); 
                     padding: 20px;
-                    border-radius: 5px;
+                    border-radius: 10px;
                     text-align: center;
                     max-width: 90%;
                     box-sizing: border-box;
                     left: 20%;
                     right: 20%;
-                    top: 60%;
-                    z-index: +1;
+                    top: 55%;
+                    z-index: 1; 
+                    font-size: 150%;
                 }
 
                 &.strong-white {
@@ -24,11 +29,30 @@ main {
             }
         }
 
-        img {
-            &.img-inicio {
+        &.bg-gradient {
+            position: relative; 
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
+                height: 100%;
+                // prueba gradient
+                background: radial-gradient(at right, rgba(255, 255, 255, 0) 0%, #4061f566 100%);
+                z-index: 0; 
             }
 
+            img {
+                &.img-inicio {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    position: relative; 
+                    z-index: -1; 
+                }
+            }
         }
     }
 }
