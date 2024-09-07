@@ -1,3 +1,5 @@
+
+
 main {
     section {
 
@@ -7,7 +9,7 @@ main {
 
             p {
                 &.presentacion-inicio {
-                    @include flexbox(column, center, inherit, inherit);
+                    @include flexbox(column, center, center, nowrap);
                     position: absolute; 
                     color: $color-white;
                     background-color: rgba(0, 0, 0, 0.5); 
@@ -18,9 +20,9 @@ main {
                     box-sizing: border-box;
                     left: 20%;
                     right: 20%;
-                    top: 55%;
+                    top: 20%;
                     z-index: 1; 
-                    font-size: 150%;
+                    font-size: 1.5rem;
                 }
 
                 &.strong-white {

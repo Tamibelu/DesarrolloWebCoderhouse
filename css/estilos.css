@@ -67,8 +67,8 @@ main section.texto-presentacion p.presentacion-inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: inherit;
-  flex-wrap: inherit;
+  align-items: center;
+  flex-wrap: nowrap;
   position: absolute;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -79,9 +79,9 @@ main section.texto-presentacion p.presentacion-inicio {
   box-sizing: border-box;
   left: 20%;
   right: 20%;
-  top: 55%;
+  top: 20%;
   z-index: 1;
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 main section.texto-presentacion p.strong-white {
   color: white;
@@ -296,19 +296,42 @@ main section div.container div.row div p.texto-contacto {
   font-weight: 500;
 }
 
-footer {
+footer section.arrow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  animation: infinite;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+footer section.arrow img {
+  width: 30px;
+}
+footer section.Copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: inherit;
   flex-wrap: inherit;
 }
-footer h6 {
+footer section.Copyright h6 {
   color: rgb(61, 62, 62);
   padding: 10px;
   font-size: small;
   font-family: "EB Garamond", serif;
   font-style: italic;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

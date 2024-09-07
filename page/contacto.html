@@ -11,13 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
 
-    <title>Document</title>
+    <!--SEO-->
+    <meta name="description" content="Contáctenos y un miembro de nuestro equipo se comunicará con usted lo antes posible para ofrecerle la asistencia que necesite.">
+    <meta name="keywords" content="alna administracion consorcios edificios propiedad horizontal arquitectura inmobiliaria">
+   <meta name="author" content="Tamara Alvarez">
+   <meta http-equiv="cache-control" content="no-cache"/>
+
+   <!--FAV-ICON-->
+   <link rel="icon" type="image/x-icon" href="../img/alna logo.png"> 
+   <title>ALNA ADMINISTRACIÓN</title>
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <!--  comento el css anterior  : <link rel="stylesheet" href="css/style.css">    -->
-
+    <!--  comento el css anterior  : <link rel="stylesheet" href="css/style.css">    -->
     <!-- agrego el nueco vinculado con SCSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     
@@ -46,7 +57,7 @@
         <section class="nuestros-contactos">
 
             <div class="sub-contact">
-                <h2 class="subtitulos-h2">CONTACTO</h2>
+                <h2 class="subtitulos-h2 animate__animated animate__pulse">MEDIOS DE CONTACTO</h2>
             </div>
 
             <p class="parrafo-tipo1">Contáctenos a través de los siguientes medios y un miembro de nuestro
@@ -87,7 +98,7 @@
 
         <!--prueba de boostrap grid-->
         <section class="container form">
-            <form action="form.php" method="post">
+            <form action="https://formsubmit.co/tami.az@hotmail.com" method="post">
                 <!-- Primera fila: Nombre y Apellido -->
                 <div class="row mb-3">
                     <div class="col">
@@ -163,8 +174,23 @@
     </main>
 
     <footer>
-        <h6>Copyright - Designed by Alvarez Tamara</h6>
+        
+
+        <section class="arrow">
+            <img src="../img/arrow-black.png" width="40">
+        </section>
+
+        <section class="Copyright">
+        <h6>Copyright 2024 - Designed by Alvarez Tamara</h6>    
+        </section>
+
     </footer>
+
+    <script>
+        document.querySelector('.arrow').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
