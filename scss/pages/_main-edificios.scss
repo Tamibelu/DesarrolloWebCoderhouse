@@ -1,3 +1,4 @@
+
 main {
     position: relative;
 
@@ -15,12 +16,10 @@ main {
 
         &.img-edificios {
             display: grid;
-            grid-auto-rows: 400px;
-            grid-template-columns: repeat(auto-fill, minmax (25rem, 1fr));
+            grid-template-columns: repeat(4, 1fr); // Cuatro columnas para escritorio
+            gap: 20px;
             margin: 20px;
             padding: 20px;
-            row-gap: 10px;
-            column-gap: 10px;
 
             .img-edificio70,
             .img-edificio76,
@@ -33,57 +32,15 @@ main {
                 @include imagenes-edificiods;
                 @include scale-hover(1.5, 1.5, 1s, 2s);
 
-            }
-
-
-
-            .img-edificio70 {
-                grid-column: 1 / 2;
-                grid-row: 1 / 2;
-            }
-
-            .img-edificio76 {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-            }
-
-            .img-edificio18 {
-                grid-column: 3 / 4;
-                grid-row: 1 / 2;
-            }
-
-            .img-edificio43 {
-                grid-column: 4 / 5;
-                grid-row: 1 / 2;
-            }
-
-            .img-edificio73 {
-                grid-column: 1 / 2;
-                grid-row: 2 / 3;
-            }
-
-            .img-edificio89 {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-            }
-
-            .img-edificio92 {
-                grid-column: 3 / 4;
-                grid-row: 2 / 3;
-            }
-
-            .img-edificio94 {
-                grid-column: 4 / 5;
-                grid-row: 2 / 3;
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
             }
         }
-
     }
 
     p {
         &.parrafo-tipo1 {
             @include parrafo-tipo1;
         }
-
     }
 }

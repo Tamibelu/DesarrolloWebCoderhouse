@@ -73,9 +73,13 @@ header div.navegador nav ul li a:hover {
     padding: 10px;
   }
   header div.navegador nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 0 10px;
+    padding: 0;
+    overflow-x: auto;
+  }
+  header div.navegador nav li {
+    margin: 0 10px;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -156,44 +160,6 @@ main section.bg-gradient img.img-inicio {
   z-index: -1;
 }
 
-@media (max-width: 576px) {
-  main section.texto-presentacion p.presentacion-inicio {
-    font-size: 1.2rem;
-    padding: 15px;
-    left: 5%;
-    right: 5%;
-    top: 30%;
-  }
-  main section.bg-gradient img.img-inicio {
-    width: 100%;
-    height: 40vh;
-  }
-}
-@media (min-width: 577px) and (max-width: 768px) {
-  main section.texto-presentacion p.presentacion-inicio {
-    font-size: 1.4rem;
-    padding: 18px;
-    left: 10%;
-    right: 10%;
-    top: 30%;
-  }
-  main section.bg-gradient img.img-inicio {
-    width: 100%;
-  }
-}
-@media (min-width: 769px) {
-  main section.texto-presentacion p.presentacion-inicio {
-    font-size: 1.5rem;
-    padding: 20px;
-    left: 20%;
-    right: 20%;
-    top: 40%;
-    transform: translateY(40%);
-  }
-  main section.bg-gradient img.img-inicio {
-    width: 100%;
-  }
-}
 main section.parrafo-copete div h2.subtitulos-h2 {
   font-size: 250%;
   font-family: "EB Garamond", serif;
@@ -208,7 +174,6 @@ main section.parrafo-copete div h2.subtitulos-h2 {
 }
 main section.parrafo-copete p.parrafo-tipo1 {
   font-size: xx-large;
-  text-align: justify;
   font-family: "EB Garamond", serif;
   padding: 0 1cm 1% 1cm;
 }
@@ -239,18 +204,19 @@ main section div h2.subtitulos-h2 {
   padding-bottom: 1%;
   font-weight: 700;
   color: #9f1414;
+  text-align: center;
 }
 main section p.parrafo-tipo1 {
   font-size: xx-large;
-  text-align: justify;
   font-family: "EB Garamond", serif;
   padding: 0 1cm 1% 1cm;
+  text-align: center;
 }
 main section p.parrafo-tipo2 {
   font-family: "EB Garamond", serif;
   font-size: 150%;
   padding: 0 1cm 1% 1cm;
-  text-align: justify;
+  text-align: center;
 }
 main section h3.estilo-subtitulo {
   font-size: 200%;
@@ -258,9 +224,8 @@ main section h3.estilo-subtitulo {
   margin-bottom: 0.5cm;
   font-weight: 500;
   color: #00039b;
-}
-main section h3.estilo-subtitulo.subtitulo-quienes-somos {
   padding: 1cm 1cm 1% 1cm;
+  text-align: center;
 }
 
 main {
@@ -280,12 +245,10 @@ main section.edificio div h2.subtitulos-h2 {
 }
 main section.img-edificios {
   display: grid;
-  grid-auto-rows: 400px;
-  grid-template-columns: repeat(auto-fill, minmax 25rem, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   margin: 20px;
   padding: 20px;
-  row-gap: 10px;
-  column-gap: 10px;
 }
 main section.img-edificios .img-edificio70,
 main section.img-edificios .img-edificio76,
@@ -295,12 +258,15 @@ main section.img-edificios .img-edificio73,
 main section.img-edificios .img-edificio89,
 main section.img-edificios .img-edificio92,
 main section.img-edificios .img-edificio94 {
-  width: 80%;
-  height: 80%;
-  clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
   position: relative;
   z-index: 1;
   transition: transform 2s ease;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 main section.img-edificios .img-edificio70:hover,
 main section.img-edificios .img-edificio76:hover,
@@ -314,41 +280,8 @@ main section.img-edificios .img-edificio94:hover {
   transition: transform 1s ease;
   z-index: 10;
 }
-main section.img-edificios .img-edificio70 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-main section.img-edificios .img-edificio76 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-main section.img-edificios .img-edificio18 {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-main section.img-edificios .img-edificio43 {
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-main section.img-edificios .img-edificio73 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-main section.img-edificios .img-edificio89 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-main section.img-edificios .img-edificio92 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-main section.img-edificios .img-edificio94 {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
 main p.parrafo-tipo1 {
   font-size: xx-large;
-  text-align: justify;
   font-family: "EB Garamond", serif;
   padding: 0 1cm 1% 1cm;
 }
@@ -367,7 +300,6 @@ main section.nuestros-contactos div.sub-contact h2.subtitulos-h2 {
 }
 main section p.parrafo-tipo1 {
   font-size: xx-large;
-  text-align: justify;
   font-family: "EB Garamond", serif;
   padding: 0 1cm 1% 1cm;
 }
@@ -418,6 +350,199 @@ footer section.Copyright h6 {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+@media (max-width: 576px) {
+  main section.texto-presentacion p.presentacion-inicio {
+    font-size: 1.2rem;
+    padding: 15px;
+    left: 5%;
+    right: 5%;
+    top: 30%;
+  }
+  main section.bg-gradient img.img-inicio {
+    width: 100%;
+    height: 40vh;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  main section.texto-presentacion p.presentacion-inicio {
+    font-size: 1.4rem;
+    padding: 18px;
+    left: 10%;
+    right: 10%;
+    top: 30%;
+  }
+  main section.bg-gradient img.img-inicio {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  main section.texto-presentacion p.presentacion-inicio {
+    font-size: 1.5rem;
+    padding: 20px;
+    left: 20%;
+    right: 20%;
+    top: 40%;
+    transform: translateY(20%);
+  }
+  main section.bg-gradient img.img-inicio {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  main section.parrafo-copete p.parrafo-tipo1 {
+    text-align: center;
+  }
+  main section.servicios-container div .row {
+    display: block;
+    row-gap: 20px;
+  }
+  main section.servicios-container div .col {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  main section.servicios-container div p.parrafo-tipo2 {
+    text-align: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  main section.parrafo-copete div h2.subtitulos-h2 {
+    font-size: 1.8rem;
+  }
+  main section.parrafo-copete p.parrafo-tipo1 {
+    font-size: 1.2rem;
+  }
+  main section.servicios-container div h3.estilo-subtitulo {
+    font-size: 1.5rem;
+  }
+  main section.servicios-container div img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+  }
+  main section.servicios-container div p.parrafo-tipo2 {
+    font-size: 1rem;
+    margin-top: 0.5cm;
+  }
+}
+@media (min-width: 769px) {
+  main section.parrafo-copete div h2.subtitulos-h2 {
+    font-size: 2rem;
+  }
+  main section.parrafo-copete p.parrafo-tipo1 {
+    text-align: justify;
+  }
+  main section.servicios-container div h3.estilo-subtitulo {
+    font-size: 1.8rem;
+  }
+  main section.servicios-container div img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+  }
+  main section.servicios-container div p.parrafo-tipo2 {
+    font-size: 1.2rem;
+    margin-top: 0.5cm;
+  }
+}
+@media (max-width: 576px) {
+  section div h2.subtitulos-h2 {
+    font-size: 1.2rem;
+    margin: 10px auto;
+  }
+  section p.parrafo-tipo1 {
+    font-size: 1rem;
+    padding: 0 0.5cm;
+    text-align: center;
+  }
+  section p.parrafo-tipo2 {
+    font-size: 0.9rem;
+    padding: 0 0.5cm;
+    text-align: center;
+  }
+  section h3.estilo-subtitulo {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  section div h2.subtitulos-h2 {
+    font-size: 1.5rem;
+    margin: 15px auto;
+  }
+  section p.parrafo-tipo1 {
+    font-size: 1.2rem;
+    padding: 0 0.75cm;
+    text-align: center;
+  }
+  section p.parrafo-tipo2 {
+    font-size: 1.1rem;
+    padding: 0 0.75cm;
+    text-align: center;
+  }
+  section h3.estilo-subtitulo {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 769px) {
+  section div h2.subtitulos-h2 {
+    font-size: 2rem;
+    margin: 20px auto;
+  }
+  section p.parrafo-tipo1 {
+    text-align: justify;
+  }
+  section p.parrafo-tipo2 {
+    font-size: 1.3rem;
+    padding: 0 1cm;
+  }
+  section h3.estilo-subtitulo {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  section.img-edificios {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: auto !important;
+    gap: 15px !important;
+    margin: 15px !important;
+  }
+  section.img-edificios .img-edificio70 img,
+  section.img-edificios .img-edificio76 img,
+  section.img-edificios .img-edificio18 img,
+  section.img-edificios .img-edificio43 img,
+  section.img-edificios .img-edificio73 img,
+  section.img-edificios .img-edificio89 img,
+  section.img-edificios .img-edificio92 img,
+  section.img-edificios .img-edificio94 img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+  p.parrafo-tipo1 {
+    text-align: center !important;
+  }
+}
+@media (max-width: 576px) {
+  section.img-edificios {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: auto !important;
+    gap: 10px !important;
+    margin: 10px !important;
+  }
+  section.img-edificios .img-edificio70 img,
+  section.img-edificios .img-edificio76 img,
+  section.img-edificios .img-edificio18 img,
+  section.img-edificios .img-edificio43 img,
+  section.img-edificios .img-edificio73 img,
+  section.img-edificios .img-edificio89 img,
+  section.img-edificios .img-edificio92 img,
+  section.img-edificios .img-edificio94 img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+  p.parrafo-tipo1 {
+    text-align: center !important;
   }
 }
 

@@ -1,0 +1,387 @@
+
+
+// 1 MQ SECCION INDEX
+//MQ MOB
+@media (max-width: 576px) {
+    main {
+        section {
+            &.texto-presentacion {
+                p {
+                    &.presentacion-inicio {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                        left: 5%; 
+                        right: 5%;
+                        top: 30%;
+                        
+                    }
+                }
+            }
+
+            &.bg-gradient {
+                img {
+                    &.img-inicio {
+                        width: 100%;
+                        height: 40vh;
+                    }
+                }
+            }
+        }
+    }
+}
+//MQ TAB
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        section {
+            &.texto-presentacion {
+                p {
+                    &.presentacion-inicio {
+                        font-size: 1.4rem; 
+                        padding: 18px;
+                        left: 10%;
+                        right: 10%;
+                        top: 30%;
+                    }
+                }
+            }
+
+            &.bg-gradient {
+                img {
+                    &.img-inicio {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+//MQ DES
+@media (min-width: 769px) {
+    main {
+        section {
+            &.texto-presentacion {
+                p {
+                    &.presentacion-inicio {
+                        font-size: 1.5rem;
+                        padding: 20px;
+                        left: 20%; 
+                        right: 20%;
+                        top: 40%;
+                        transform: translateY(20%);
+                    }
+                }
+            }
+
+            &.bg-gradient {
+                img {
+                    &.img-inicio {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 2 MQ SECCION SERVICIOS
+//MQ MOB
+@media (max-width: 576px) {
+    main {
+        section {
+            &.parrafo-copete {
+                p {
+                    &.parrafo-tipo1 {
+                        text-align: center;
+                    }
+                }
+            }
+
+            &.servicios-container {
+                div {
+                    .row {
+                        display: block;
+                        row-gap: 20px;
+                    }
+
+                    .col {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        text-align: center; // Justificado solo mb
+                    }
+
+                    p {
+                        &.parrafo-tipo2 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        section {
+            &.parrafo-copete {
+                div {
+                    h2 {
+                        &.subtitulos-h2 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
+                p {
+                    &.parrafo-tipo1 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            &.servicios-container {
+                div {
+                    h3 {
+                        &.estilo-subtitulo {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    img {
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+                    }
+
+                    p {
+                        &.parrafo-tipo2 {
+                            font-size: 1rem;
+                            margin-top: 0.5cm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//MQ DES
+@media (min-width: 769px) {
+    main {
+        section {
+            &.parrafo-copete {
+                div {
+                    h2 {
+                        &.subtitulos-h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                p {
+                    &.parrafo-tipo1 {
+                        
+                        text-align: justify;
+                    }
+                }
+            }
+
+            &.servicios-container {
+                div {
+                    h3 {
+                        &.estilo-subtitulo {
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    img {
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+                    }
+
+                    p {
+                        &.parrafo-tipo2 {
+                            font-size: 1.2rem;
+                            margin-top: 0.5cm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+    // 3 MQ SECCION QUIENES SOMOS
+    // MQ móviles
+    @media (max-width: 576px) {
+        section {
+            div {
+                h2 {
+                    &.subtitulos-h2 {
+                        font-size: 1.2rem;
+                        margin: 10px auto;
+                    }
+                }
+            }
+
+            p {
+                &.parrafo-tipo1 {
+                    font-size: 1rem;
+                    padding: 0 0.5cm;
+                    text-align: center;
+                }
+
+                &.parrafo-tipo2 {
+                    font-size: 0.9rem;
+                    padding: 0 0.5cm;
+                    text-align: center;
+                }
+            }
+
+            h3 {
+                &.estilo-subtitulo {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    // MQ tabletas
+    @media (min-width: 577px) and (max-width: 768px) {
+        section {
+            div {
+                h2 {
+                    &.subtitulos-h2 {
+                        font-size: 1.5rem;
+                        margin: 15px auto;
+                    }
+                }
+            }
+
+            p {
+                &.parrafo-tipo1 {
+                    font-size: 1.2rem;
+                    padding: 0 0.75cm;
+                    text-align: center;
+                }
+
+                &.parrafo-tipo2 {
+                    font-size: 1.1rem;
+                    padding: 0 0.75cm;
+                    text-align: center;
+                }
+            }
+
+            h3 {
+                &.estilo-subtitulo {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    // MQ escritorio
+    @media (min-width: 769px) {
+        section {
+            div {
+                h2 {
+                    &.subtitulos-h2 {
+                        font-size: 2rem;
+                        margin: 20px auto;
+                    }
+                }
+            }
+
+            p {
+                &.parrafo-tipo1 {
+                    
+                    text-align: justify;
+
+                    
+                }
+
+                &.parrafo-tipo2 {
+                    font-size: 1.3rem;
+                    padding: 0 1cm;
+                }
+            }
+
+            h3 {
+                &.estilo-subtitulo {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+
+// 4 MQ SECCION EDIFICIOS
+
+@media (min-width: 577px) and (max-width: 768px) {
+    section {
+        &.img-edificios {
+            grid-template-columns: repeat(2, 1fr) !important; // Forzar dos columnas
+            grid-auto-rows: auto !important; // Ajustar la altura automáticamente
+            gap: 15px !important; // Ajusta según sea necesario
+            margin: 15px !important; // Ajusta según sea necesario
+
+            .img-edificio70,
+            .img-edificio76,
+            .img-edificio18,
+            .img-edificio43,
+            .img-edificio73,
+            .img-edificio89,
+            .img-edificio92,
+            .img-edificio94 {
+                img {
+                    width: 100% !important;
+                    height: auto !important;
+                    object-fit: cover !important;
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    p {
+        &.parrafo-tipo1 {
+            text-align: center !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        &.img-edificios {
+            grid-template-columns: repeat(2, 1fr) !important; // Forzar dos columnas
+            grid-auto-rows: auto !important; // Ajustar la altura automáticamente
+            gap: 10px !important; // Ajusta según sea necesario
+            margin: 10px !important; // Ajusta según sea necesario
+
+            .img-edificio70,
+            .img-edificio76,
+            .img-edificio18,
+            .img-edificio43,
+            .img-edificio73,
+            .img-edificio89,
+            .img-edificio92,
+            .img-edificio94 {
+                img {
+                    width: 100% !important;
+                    height: auto !important;
+                    object-fit: cover !important;
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    p {
+        &.parrafo-tipo1 {
+            text-align: center !important;
+        }
+    }
+}

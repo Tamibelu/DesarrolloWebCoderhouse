@@ -76,14 +76,20 @@ header {
                 padding: 10px;
                 nav {
                     ul {
-                        flex-direction: column;
+                        flex-direction: row; // fila para móvil
                         align-items: center;
-                        padding: 0 10px;
+                        padding: 0;
+                        overflow-x: auto; // desplazamiento horizontal 
+                    }
+
+                    li {
+                        margin: 0 10px; 
                     }
                 }
             }
         }
     }
+
 
     // MQ  tablets
     @media (min-width: 577px) and (max-width: 768px) {

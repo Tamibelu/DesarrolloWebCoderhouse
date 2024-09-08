@@ -21,7 +21,7 @@
 
 @mixin parrafo-tipo1 {
     font-size: xx-large;
-    text-align: justify;
+    
     font-family: "EB Garamond", serif;
     padding: 0 1cm 1% 1cm;
 }
@@ -30,7 +30,7 @@
     font-size: 200%;
     font-family: "EB Garamond", serif;
     margin-bottom: 0.5cm;
-
+//saco  text-align: justify; para modificar los MQ
     font-weight: 500;
 }
 
@@ -48,12 +48,14 @@
 }
 
 @mixin imagenes-edificiods {
-    width: 80%;
-    height: 80%;
-    clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    height: auto; // Mantiene la proporción de la imagen
+    object-fit: cover; // Asegura que la imagen cubra su contenedor
+    display: block;
 }
 
-//transformaciones transicion + animacion
+
+
 @mixin scale-hover($scale-x: 1.5, $scale-y: 1.5, $enter-time: 1s, $return-time: 2s) {
     position: relative;
     z-index: 1;
@@ -63,10 +65,9 @@
         transform: scale($scale-x, $scale-y);
         transition: transform $enter-time ease;
         z-index: 10;
-
-        
     }
 }
 
+//transformaciones transicion + animacion
 
 // mixin es un bloque de propiedades que trabajan en conjunto y se reutilizan

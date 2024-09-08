@@ -5,8 +5,7 @@ main {
                 &.subtitulos-h2 {
                     @include subtitulo-h2;
                     color: $color-h2;
-                    //mixin
-
+                    text-align: center;
                 }
             }
         }
@@ -14,12 +13,13 @@ main {
         p {
             &.parrafo-tipo1 {
                 @include parrafo-tipo1;
+                text-align: center;
             }
 
             &.parrafo-tipo2 {
                 @include parrafo-tipo2;
-                  padding: 0 1cm 1% 1cm;
-                  text-align: justify;
+                padding: 0 1cm 1% 1cm;
+                text-align: center;
             }
         }
 
@@ -27,11 +27,8 @@ main {
             &.estilo-subtitulo {
                 @include estilo-subtitulo;
                 color: $color-h3;
-
-                &.subtitulo-quienes-somos {
-                    padding: 1cm 1cm 1% 1cm;
-                }
-
+                padding: 1cm 1cm 1% 1cm;
+                text-align: center;
             }
         }
     }
