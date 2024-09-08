@@ -9,6 +9,7 @@ main {
                     &.subtitulos-h2 {
                         @include subtitulo-h2;
                         color: $color-h2;
+                        margin: 10px auto;
                     }
                 }
             }
