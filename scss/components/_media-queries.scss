@@ -1,27 +1,120 @@
 // 1 MQ SECCION INDEX
 
+
 @media (max-width: 576px) {
     main {
         section {
-            &.texto-presentacion {
-                p {
-                    &.presentacion-inicio {
-                        font-size: 1.2rem;
-                        padding: 15px;
-                        left: 5%;
-                        right: 5%;
-                        top: 30%;
-
-                    }
-                }
-            }
-
             &.bg-gradient {
+                position: relative;
+                height: 80vh;
+                overflow: hidden;
+                
                 img {
                     &.img-inicio {
                         width: 100%;
-                        height: 40vh;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
                     }
+                }
+
+                .texto-contenedor {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: calc(100% - 20px);
+                    padding: 10px;
+                }
+
+                .texto-presentacion {
+                    p {
+                        &.presentacion-inicio {
+                            font-size: 1.2rem;
+                            padding: 10px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .texto-presupuesto {
+                    font-size: 1.5rem;
+                    padding: 5px 10px;
+                }
+
+                &.estilo-presupuesto {
+                    font-size: 0.5rem; 
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        section {
+            &.bg-gradient {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .texto-contenedor {
+                    padding: 15px;
+                }
+
+                .texto-presentacion {
+                    p {
+                        &.presentacion-inicio {
+                            font-size: 1.4rem;
+                            padding: 15px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+
+                .texto-presupuesto {
+                    font-size: 1.8rem;
+                    padding: 10px 15px;
+                }
+
+                &.estilo-presupuesto {
+                    font-size: 0.8rem; 
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    main {
+        section {
+            &.bg-gradient {
+                img {
+                    width: 100%;
+                }
+
+                .texto-contenedor {
+                    padding: 20px;
+                }
+
+                .texto-presentacion {
+                    p {
+                        &.presentacion-inicio {
+                            font-size: 1.5rem;
+                            padding: 20px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+
+                .texto-presupuesto {
+                    font-size: 2rem;
+                    padding: 15px 20px;
+                }
+
+                &.estilo-presupuesto {
+                    font-size: 1rem; 
                 }
             }
         }
@@ -32,58 +125,73 @@
 @media (min-width: 577px) and (max-width: 768px) {
     main {
         section {
-            &.texto-presentacion {
-                p {
-                    &.presentacion-inicio {
-                        font-size: 1.4rem;
-                        padding: 18px;
-                        left: 10%;
-                        right: 10%;
-                        top: 30%;
-                    }
-                }
-            }
-
             &.bg-gradient {
                 img {
-                    &.img-inicio {
-                        width: 100%;
+                    width: 100%;
+                    height: auto; 
+                }
 
+                .texto-contenedor {
+                    padding: 15px;
+                }
+
+                .texto-presentacion {
+                    p {
+                        &.presentacion-inicio {
+                            font-size: 1.4rem;
+                            padding: 15px;
+                            margin-bottom: 20px;
+                        }
                     }
+                }
+
+                .texto-presupuesto {
+                    font-size: 1.8rem;
+                    padding: 10px 15px;
+                }
+
+                &.estilo-presupuesto {
+                    font-size: medium;
+                   
                 }
             }
         }
     }
 }
-
 
 @media (min-width: 769px) {
     main {
         section {
-            &.texto-presentacion {
-                p {
-                    &.presentacion-inicio {
-                        font-size: 1.5rem;
-                        padding: 20px;
-                        left: 20%;
-                        right: 20%;
-                        top: 40%;
-                        transform: translateY(20%);
-                    }
-                }
-            }
-
             &.bg-gradient {
                 img {
-                    &.img-inicio {
-                        width: 100%;
+                    width: 100%;
+                }
 
+                .texto-contenedor {
+                    padding: 20px;
+                }
+
+                .texto-presentacion {
+                    p {
+                        &.presentacion-inicio {
+                            font-size: 1.5rem;
+                            padding: 20px;
+                            margin-bottom: 30px;
+                        }
                     }
+                }
+
+                .texto-presupuesto {
+                    font-size: 2rem;
+                    padding: 15px 20px;
                 }
             }
         }
     }
 }
+
+
+
 
 
 // 2 MQ SECCION SERVICIOS
@@ -138,7 +246,7 @@
                 p {
                     &.parrafo-tipo1 {
                         font-size: 1.2rem;
-                        text-align: center; // Añadido para asegurar que se centre en tabletas
+                        text-align: center; 
                     }
                 }
             }
@@ -280,7 +388,7 @@
     }
 }
 
-
+// MQ escritorio
 @media (min-width: 769px) {
     section {
         div {

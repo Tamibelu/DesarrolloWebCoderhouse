@@ -1,54 +1,59 @@
 main {
     section {
-        &.texto-presentacion {
-            position: relative; 
-            
-
-            p {
-                &.presentacion-inicio {
-                    @include flexbox(column, center, center, nowrap);
-                    position: absolute; 
-                    color: $color-white;
-                    background-color: rgba(0, 0, 0, 0.5); 
-                    padding: 20px;
-                    border-radius: 10px;
-                    text-align: center;
-                    max-width: 90%;
-                    box-sizing: border-box;
-                    left: 20%;
-                    right: 20%;
-                    top: 20%;
-                    z-index: 1; 
-                    font-size: 1.5rem;
-                }
-
-                &.strong-white {
-                    color: $color-white;
-                }
-            }
-        }
-
         &.bg-gradient {
-            position: relative; 
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: radial-gradient(at right, rgba(255, 255, 255, 0) 0%, #4061f566 100%);
-                z-index: 0; 
-            }
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
 
             img {
                 &.img-inicio {
                     width: 100%;
-                    height: auto;
-                    display: block;
-                    position: relative; 
-                    z-index: -1; 
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .texto-contenedor {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                padding: 20px;
+
+                .texto-presentacion {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+                    padding: 20px;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 20px;
+                    font-family: "EB Garamond", serif;
+                }
+
+                .texto-presupuesto {
+                    text-align: center;
+
+                    color: white;
+                    padding: 10px 20px;
+
+                    &.estilo-presupuesto {
+
+                        font-family: "EB Garamond", serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(161, 78, 78, 0.733);
+    border-radius: 8px; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: fit-content; 
+                    }
                 }
             }
         }

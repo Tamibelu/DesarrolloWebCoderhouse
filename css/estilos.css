@@ -113,51 +113,51 @@ header div.navegador nav ul li a:hover {
   }
 }
 
-main section.texto-presentacion {
-  position: relative;
-}
-main section.texto-presentacion p.presentacion-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: absolute;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 90%;
-  box-sizing: border-box;
-  left: 20%;
-  right: 20%;
-  top: 20%;
-  z-index: 1;
-  font-size: 1.5rem;
-}
-main section.texto-presentacion p.strong-white {
-  color: white;
-}
 main section.bg-gradient {
   position: relative;
-}
-main section.bg-gradient::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(at right, rgba(255, 255, 255, 0) 0%, rgba(64, 97, 245, 0.4) 100%);
-  z-index: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 main section.bg-gradient img.img-inicio {
   width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
+main section.bg-gradient .texto-contenedor {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px;
+}
+main section.bg-gradient .texto-contenedor .texto-presentacion {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "EB Garamond", serif;
+}
+main section.bg-gradient .texto-contenedor .texto-presupuesto {
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+}
+main section.bg-gradient .texto-contenedor .texto-presupuesto.estilo-presupuesto {
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(161, 78, 78, 0.733);
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: fit-content;
 }
 
 main section.parrafo-copete div h2.subtitulos-h2 {
@@ -365,41 +365,115 @@ footer section.Copyright h6 {
   }
 }
 @media (max-width: 576px) {
-  main section.texto-presentacion p.presentacion-inicio {
-    font-size: 1.2rem;
-    padding: 15px;
-    left: 5%;
-    right: 5%;
-    top: 30%;
+  main section.bg-gradient {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
   }
   main section.bg-gradient img.img-inicio {
     width: 100%;
-    height: 40vh;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  main section.bg-gradient .texto-contenedor {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  main section.bg-gradient .texto-presentacion p.presentacion-inicio {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  main section.bg-gradient .texto-presupuesto {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+  main section.bg-gradient.estilo-presupuesto {
+    font-size: 0.5rem;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  main section.texto-presentacion p.presentacion-inicio {
-    font-size: 1.4rem;
-    padding: 18px;
-    left: 10%;
-    right: 10%;
-    top: 30%;
-  }
-  main section.bg-gradient img.img-inicio {
+  main section.bg-gradient img {
     width: 100%;
+    height: auto;
+  }
+  main section.bg-gradient .texto-contenedor {
+    padding: 15px;
+  }
+  main section.bg-gradient .texto-presentacion p.presentacion-inicio {
+    font-size: 1.4rem;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  main section.bg-gradient .texto-presupuesto {
+    font-size: 1.8rem;
+    padding: 10px 15px;
+  }
+  main section.bg-gradient.estilo-presupuesto {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 769px) {
-  main section.texto-presentacion p.presentacion-inicio {
+  main section.bg-gradient img {
+    width: 100%;
+  }
+  main section.bg-gradient .texto-contenedor {
+    padding: 20px;
+  }
+  main section.bg-gradient .texto-presentacion p.presentacion-inicio {
     font-size: 1.5rem;
     padding: 20px;
-    left: 20%;
-    right: 20%;
-    top: 40%;
-    transform: translateY(20%);
+    margin-bottom: 30px;
   }
-  main section.bg-gradient img.img-inicio {
+  main section.bg-gradient .texto-presupuesto {
+    font-size: 2rem;
+    padding: 15px 20px;
+  }
+  main section.bg-gradient.estilo-presupuesto {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  main section.bg-gradient img {
     width: 100%;
+    height: auto;
+  }
+  main section.bg-gradient .texto-contenedor {
+    padding: 15px;
+  }
+  main section.bg-gradient .texto-presentacion p.presentacion-inicio {
+    font-size: 1.4rem;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  main section.bg-gradient .texto-presupuesto {
+    font-size: 1.8rem;
+    padding: 10px 15px;
+  }
+  main section.bg-gradient.estilo-presupuesto {
+    font-size: medium;
+  }
+}
+@media (min-width: 769px) {
+  main section.bg-gradient img {
+    width: 100%;
+  }
+  main section.bg-gradient .texto-contenedor {
+    padding: 20px;
+  }
+  main section.bg-gradient .texto-presentacion p.presentacion-inicio {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  main section.bg-gradient .texto-presupuesto {
+    font-size: 2rem;
+    padding: 15px 20px;
   }
 }
 @media (max-width: 576px) {
