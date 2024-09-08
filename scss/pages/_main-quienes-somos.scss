@@ -13,7 +13,7 @@ main {
         p {
             &.parrafo-tipo1 {
                 @include parrafo-tipo1;
-                
+
             }
 
             &.parrafo-tipo2 {
@@ -23,12 +23,24 @@ main {
             }
         }
 
+        .gif-container { // gifs
+            display: flex;
+            justify-content: center; 
+            margin-top: 2%;
+            gap: 40px; 
+
+            img {
+                width: 100px; 
+                height: auto; 
+            }
+        }
+
         h3 {
             &.estilo-subtitulo {
                 @include estilo-subtitulo;
                 color: $color-h3;
                 padding: 1cm 1cm 1% 1cm;
-                
+
             }
         }
     }

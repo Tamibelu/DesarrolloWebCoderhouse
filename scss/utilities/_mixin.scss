@@ -50,8 +50,8 @@
 
 @mixin imagenes-edificiods {
     width: 100%;
-    height: auto; // Mantiene la proporción de la imagen
-    object-fit: cover; // Asegura que la imagen cubra su contenedor
+    height: auto; 
+    object-fit: cover; 
     display: block;
 }
 

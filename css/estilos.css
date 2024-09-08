@@ -218,6 +218,16 @@ main section p.parrafo-tipo2 {
   padding: 0 1cm 1% 1cm;
   text-align: center;
 }
+main section .gif-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 40px;
+}
+main section .gif-container img {
+  width: 100px;
+  height: auto;
+}
 main section h3.estilo-subtitulo {
   font-size: 200%;
   font-family: "EB Garamond", serif;
