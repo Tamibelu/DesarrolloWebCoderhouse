@@ -13,7 +13,7 @@ main {
         p {
             &.parrafo-tipo1 {
                 @include parrafo-tipo1;
-                text-align: center;
+                
             }
 
             &.parrafo-tipo2 {
@@ -28,7 +28,7 @@ main {
                 @include estilo-subtitulo;
                 color: $color-h3;
                 padding: 1cm 1cm 1% 1cm;
-                text-align: center;
+                
             }
         }
     }

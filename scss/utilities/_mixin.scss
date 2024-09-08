@@ -30,8 +30,9 @@
     font-size: 200%;
     font-family: "EB Garamond", serif;
     margin-bottom: 0.5cm;
-//saco  text-align: justify; para modificar los MQ
+    //saco  text-align: justify; para modificar los MQ
     font-weight: 500;
+    text-align: center;
 }
 
 @mixin subtitulo-contacto {

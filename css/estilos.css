@@ -182,6 +182,7 @@ main section.servicios-container div h3.estilo-subtitulo {
   font-family: "EB Garamond", serif;
   margin-bottom: 0.5cm;
   font-weight: 500;
+  text-align: center;
   color: #00039b;
 }
 main section.servicios-container div img {
@@ -210,7 +211,6 @@ main section p.parrafo-tipo1 {
   font-size: xx-large;
   font-family: "EB Garamond", serif;
   padding: 0 1cm 1% 1cm;
-  text-align: center;
 }
 main section p.parrafo-tipo2 {
   font-family: "EB Garamond", serif;
@@ -223,9 +223,9 @@ main section h3.estilo-subtitulo {
   font-family: "EB Garamond", serif;
   margin-bottom: 0.5cm;
   font-weight: 500;
+  text-align: center;
   color: #00039b;
   padding: 1cm 1cm 1% 1cm;
-  text-align: center;
 }
 
 main {
@@ -392,7 +392,9 @@ footer section.Copyright h6 {
 }
 @media (max-width: 576px) {
   main section.parrafo-copete p.parrafo-tipo1 {
-    text-align: center;
+    font-size: xx-large;
+    font-family: "EB Garamond", serif;
+    padding: 0 1cm 1% 1cm;
   }
   main section.servicios-container div .row {
     display: block;
@@ -413,6 +415,7 @@ footer section.Copyright h6 {
   }
   main section.parrafo-copete p.parrafo-tipo1 {
     font-size: 1.2rem;
+    text-align: center;
   }
   main section.servicios-container div h3.estilo-subtitulo {
     font-size: 1.5rem;
@@ -518,7 +521,7 @@ footer section.Copyright h6 {
     display: block !important;
   }
   p.parrafo-tipo1 {
-    text-align: center !important;
+    text-align: justify;
   }
 }
 @media (max-width: 576px) {
@@ -542,7 +545,35 @@ footer section.Copyright h6 {
     display: block !important;
   }
   p.parrafo-tipo1 {
-    text-align: center !important;
+    text-align: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  section.nuestros-contactos div.sub-contact h2.subtitulos-h2 {
+    font-size: 1.5rem;
+  }
+  section p.parrafo-tipo1 {
+    text-align: justify;
+  }
+  section div.container div.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  section div.container div.row div {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+}
+@media (max-width: 576px) {
+  section.nuestros-contactos div.sub-contact h2.subtitulos-h2 {
+    font-size: 1.25rem;
+  }
+  section div.container div.row {
+    display: block;
+  }
+  section div.container div.row div {
+    margin-bottom: 20px;
   }
 }
 

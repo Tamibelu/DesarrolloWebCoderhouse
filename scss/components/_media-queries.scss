@@ -1,5 +1,3 @@
-
-
 // 1 MQ SECCION INDEX
 //MQ MOB
 @media (max-width: 576px) {
@@ -10,10 +8,10 @@
                     &.presentacion-inicio {
                         font-size: 1.2rem;
                         padding: 15px;
-                        left: 5%; 
+                        left: 5%;
                         right: 5%;
                         top: 30%;
-                        
+
                     }
                 }
             }
@@ -29,6 +27,7 @@
         }
     }
 }
+
 //MQ TAB
 @media (min-width: 577px) and (max-width: 768px) {
     main {
@@ -36,7 +35,7 @@
             &.texto-presentacion {
                 p {
                     &.presentacion-inicio {
-                        font-size: 1.4rem; 
+                        font-size: 1.4rem;
                         padding: 18px;
                         left: 10%;
                         right: 10%;
@@ -49,13 +48,14 @@
                 img {
                     &.img-inicio {
                         width: 100%;
-                        
+
                     }
                 }
             }
         }
     }
 }
+
 //MQ DES
 @media (min-width: 769px) {
     main {
@@ -65,7 +65,7 @@
                     &.presentacion-inicio {
                         font-size: 1.5rem;
                         padding: 20px;
-                        left: 20%; 
+                        left: 20%;
                         right: 20%;
                         top: 40%;
                         transform: translateY(20%);
@@ -77,7 +77,7 @@
                 img {
                     &.img-inicio {
                         width: 100%;
-                        
+
                     }
                 }
             }
@@ -94,7 +94,7 @@
             &.parrafo-copete {
                 p {
                     &.parrafo-tipo1 {
-                        text-align: center;
+                        @include parrafo-tipo1;
                     }
                 }
             }
@@ -109,7 +109,7 @@
                     .col {
                         width: 100%;
                         margin-bottom: 20px;
-                        text-align: center; // Justificado solo mb
+                        text-align: center;
                     }
 
                     p {
@@ -122,8 +122,6 @@
         }
     }
 }
-
-
 
 @media (min-width: 577px) and (max-width: 768px) {
     main {
@@ -140,6 +138,7 @@
                 p {
                     &.parrafo-tipo1 {
                         font-size: 1.2rem;
+                        text-align: center; // Añadido para asegurar que se centre en tabletas
                     }
                 }
             }
@@ -167,7 +166,7 @@
         }
     }
 }
-//MQ DES
+
 @media (min-width: 769px) {
     main {
         section {
@@ -182,8 +181,7 @@
 
                 p {
                     &.parrafo-tipo1 {
-                        
-                        text-align: justify;
+                        text-align: justify; // Justificado en escritorio!!
                     }
                 }
             }
@@ -213,109 +211,107 @@
 }
 
 
-
-    // 3 MQ SECCION QUIENES SOMOS
-    // MQ móviles
-    @media (max-width: 576px) {
-        section {
-            div {
-                h2 {
-                    &.subtitulos-h2 {
-                        font-size: 1.2rem;
-                        margin: 10px auto;
-                    }
-                }
-            }
-
-            p {
-                &.parrafo-tipo1 {
-                    font-size: 1rem;
-                    padding: 0 0.5cm;
-                    text-align: center;
-                }
-
-                &.parrafo-tipo2 {
-                    font-size: 0.9rem;
-                    padding: 0 0.5cm;
-                    text-align: center;
-                }
-            }
-
-            h3 {
-                &.estilo-subtitulo {
-                    font-size: 1.1rem;
-                }
-            }
-        }
-    }
-
-    // MQ tabletas
-    @media (min-width: 577px) and (max-width: 768px) {
-        section {
-            div {
-                h2 {
-                    &.subtitulos-h2 {
-                        font-size: 1.5rem;
-                        margin: 15px auto;
-                    }
-                }
-            }
-
-            p {
-                &.parrafo-tipo1 {
+// 3 MQ SECCION QUIENES SOMOS
+// MQ móviles
+@media (max-width: 576px) {
+    section {
+        div {
+            h2 {
+                &.subtitulos-h2 {
                     font-size: 1.2rem;
-                    padding: 0 0.75cm;
-                    text-align: center;
-                }
-
-                &.parrafo-tipo2 {
-                    font-size: 1.1rem;
-                    padding: 0 0.75cm;
-                    text-align: center;
-                }
-            }
-
-            h3 {
-                &.estilo-subtitulo {
-                    font-size: 1.3rem;
+                    margin: 10px auto;
                 }
             }
         }
-    }
 
-    // MQ escritorio
-    @media (min-width: 769px) {
-        section {
-            div {
-                h2 {
-                    &.subtitulos-h2 {
-                        font-size: 2rem;
-                        margin: 20px auto;
-                    }
-                }
+        p {
+            &.parrafo-tipo1 {
+                font-size: 1rem;
+                padding: 0 0.5cm;
+                text-align: center;
             }
 
-            p {
-                &.parrafo-tipo1 {
-                    
-                    text-align: justify;
-
-                    
-                }
-
-                &.parrafo-tipo2 {
-                    font-size: 1.3rem;
-                    padding: 0 1cm;
-                }
+            &.parrafo-tipo2 {
+                font-size: 0.9rem;
+                padding: 0 0.5cm;
+                text-align: center;
             }
+        }
 
-            h3 {
-                &.estilo-subtitulo {
-                    font-size: 1.6rem;
-                }
+        h3 {
+            &.estilo-subtitulo {
+                font-size: 1.1rem;
             }
         }
     }
+}
+
+// MQ tabletas
+@media (min-width: 577px) and (max-width: 768px) {
+    section {
+        div {
+            h2 {
+                &.subtitulos-h2 {
+                    font-size: 1.5rem;
+                    margin: 15px auto;
+                }
+            }
+        }
+
+        p {
+            &.parrafo-tipo1 {
+                font-size: 1.2rem;
+                padding: 0 0.75cm;
+                text-align: center;
+            }
+
+            &.parrafo-tipo2 {
+                font-size: 1.1rem;
+                padding: 0 0.75cm;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            &.estilo-subtitulo {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+// MQ escritorio
+@media (min-width: 769px) {
+    section {
+        div {
+            h2 {
+                &.subtitulos-h2 {
+                    font-size: 2rem;
+                    margin: 20px auto;
+                }
+            }
+        }
+
+        p {
+            &.parrafo-tipo1 {
+                text-align: justify; // Justificado en escritorio!!
+
+
+            }
+
+            &.parrafo-tipo2 {
+                font-size: 1.3rem;
+                padding: 0 1cm;
+            }
+        }
+
+        h3 {
+            &.estilo-subtitulo {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
 
 
 // 4 MQ SECCION EDIFICIOS
@@ -323,10 +319,10 @@
 @media (min-width: 577px) and (max-width: 768px) {
     section {
         &.img-edificios {
-            grid-template-columns: repeat(2, 1fr) !important; // Forzar dos columnas
-            grid-auto-rows: auto !important; // Ajustar la altura automáticamente
-            gap: 15px !important; // Ajusta según sea necesario
-            margin: 15px !important; // Ajusta según sea necesario
+            grid-template-columns: repeat(2, 1fr) !important; // crisis resuelta
+            grid-auto-rows: auto !important;
+            gap: 15px !important;
+            margin: 15px !important;
 
             .img-edificio70,
             .img-edificio76,
@@ -348,7 +344,7 @@
 
     p {
         &.parrafo-tipo1 {
-            text-align: center !important;
+            text-align: justify; // Justificado en escritorio!!
         }
     }
 }
@@ -356,10 +352,10 @@
 @media (max-width: 576px) {
     section {
         &.img-edificios {
-            grid-template-columns: repeat(2, 1fr) !important; // Forzar dos columnas
-            grid-auto-rows: auto !important; // Ajustar la altura automáticamente
-            gap: 10px !important; // Ajusta según sea necesario
-            margin: 10px !important; // Ajusta según sea necesario
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-auto-rows: auto !important;
+            gap: 10px !important;
+            margin: 10px !important;
 
             .img-edificio70,
             .img-edificio76,
@@ -381,7 +377,81 @@
 
     p {
         &.parrafo-tipo1 {
-            text-align: center !important;
+            text-align: center
+        }
+    }
+}
+
+
+// 5 MQ SECCION CONTACTO
+
+// escritorio funciona bien sin MQ modificada
+
+@media (min-width: 577px) and (max-width: 768px) {
+    section {
+        &.nuestros-contactos {
+            div {
+                &.sub-contact {
+                    h2 {
+                        &.subtitulos-h2 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            &.parrafo-tipo1 {
+                text-align: justify; // Justificado en escritorio!!       
+            }
+        }
+
+        div {
+            &.container {
+                div {
+                    &.row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 15px;
+
+                        div {
+                            flex: 1 1 48%;
+                            max-width: 48%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        &.nuestros-contactos {
+            div {
+                &.sub-contact {
+                    h2 {
+                        &.subtitulos-h2 {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        div {
+            &.container {
+                div {
+                    &.row {
+                        display: block;
+
+                        div {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
